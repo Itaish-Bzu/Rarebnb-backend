@@ -1,4 +1,4 @@
 export default {
   dbURL: process.env.MONGO_URL ,
-  dbName : 'stay_DB'
+  dbName : process.env.DB_NAME || 'stay_DB'
 }
