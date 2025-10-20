@@ -1,39 +1,17 @@
 # 🏡 Rarebnb – Full-Stack Stay Management App
 
-Rarebnb is a full-stack web application inspired by Airbnb, allowing users to browse, book, and manage stays with reviews and real-time chat.
+Rarebnb is a full-stack web application inspired by Airbnb, allowing users to browse, book, and manage stays with reviews.
 
 ---
 
-## 📌 Demo / Screenshot
+## 📌 Demo 
 
-![Screenshot](public/assets/images/png/demo.png)  
+![Screenshot](public/assets/demo.png)  
 
 🔗 Live site: https://rarebnb-76qo.onrender.com
 
 ---
 
-## 🏗️ Project Structure
-
-```plaintext
-backend/
-├── api/
-│   ├── auth/       # Authentication routes
-│   ├── user/       # User management
-│   ├── stay/       # Stay CRUD operations
-│   └── order/      # Orders system
-├── services/
-│   ├── db.service.js       # MongoDB connection
-│   ├── socket.service.js   # WebSocket handling
-│   ├── logger.service.js   # Logging
-│   └── util.service.js     # Helper functions
-├── middlewares/
-│   ├── requireAuth.js      # JWT validation
-│   └── setupAls.js         # Async local storage
-├── public/                 # Static files (images, frontend build if served)
-└── package.json
-```
-
----
 
 ## 🚀 Tech Stack
 
@@ -66,6 +44,28 @@ backend/
 
 ---
 
+## 🏗️ Project Structure
+
+```plaintext
+backend/
+├── api/
+│   ├── auth/       # Authentication routes
+│   ├── user/       # User management
+│   ├── stay/       # Stay CRUD operations
+│   └── order/      # Orders system
+├── services/
+│   ├── db.service.js       # MongoDB connection
+│   ├── socket.service.js   # WebSocket handling
+│   ├── logger.service.js   # Logging
+│   └── util.service.js     # Helper functions
+├── middlewares/
+│   ├── requireAuth.js      # JWT validation
+│   └── setupAls.js         # Async local storage
+├── public/                 # Static files (images, frontend build if served)
+└── package.json
+```
+---
+
 ## 🛠️ Running the Project
 
 ### Install Dependencies
@@ -80,8 +80,7 @@ npm run dev
 
 ## 📌 Notes
 
-The backend contains API routes, middleware, services, and database connection.
+- The backend contains API routes, middleware, services, and database connection.
+- The frontend is served from public/ and contains React components, Redux state management, and WebSocket handling.
+- Both backend and frontend are combined in a single repository.
 
-The frontend is served from public/ and contains React components, Redux state management, and WebSocket handling.
-
-Both backend and frontend are combined in a single repository.
